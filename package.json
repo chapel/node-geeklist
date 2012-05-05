@@ -12,7 +12,9 @@
   "engines": {
     "node": "0.6.x"
   },
-  "dependencies": {},
+  "dependencies": {
+    "oauth": "~0.9.7"
+  },
   "devDependencies": {},
   "optionalDependencies": {}
 }
