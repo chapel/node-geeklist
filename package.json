@@ -3,7 +3,7 @@
   "name": "geeklist",
   "description": "Node.js wrapper for Geekli.st",
   "version": "0.0.1",
-  "homepage": "http://hackers.geekli.st",
+  "homepage": "http://hackers.geekli.st/",
   "repository": {
     "type": "git",
     "url": "git://github.com/chapel/node-geeklist.git"
