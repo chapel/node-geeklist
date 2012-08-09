@@ -14,7 +14,5 @@ var geeklist = require('geeklist')
 		  , www_server: 'http://sandbox.geekli.st'
 		});
 
-gklst.users('rekatz').micros(function(err, micros) {
-	console.log(micros);
-});
+gklst.users('rekatz').micros();
 ```
