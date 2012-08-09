@@ -12,7 +12,7 @@ var geeklist = require('geeklist')
 		  , access_secret: ''   // omit to use process.env.GEEKLIST_ACCESS_SECRET
 		  , api_server: 'http://sandbox-api.geeklist'
 		  , www_server: 'http://sandbox.geekli.st'
-		});
+		})
 
-gklst.users('rekatz').micros();
+gklst.users('rekatz').micros()
 ```

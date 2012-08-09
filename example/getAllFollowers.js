@@ -3,24 +3,24 @@ var async = require('async')
   , geeks = []
 	, recordsPage = 0
   , recordsPerCall = 50
-  , lastRetrievedCount = recordsPerCall;
+  , lastRetrievedCount = recordsPerCall
 
 async.whilst(
 	function() { 
-		return lastRetrievedCount == recordsPerCall; 
+		return lastRetrievedCount == recordsPerCall
 	},
 	
 	function(callback) {
 		gklst.users('chapel').followers({ count: recordsPerCall, page: ++recordsPage }, function(err, followers) {
-			lastRetrievedCount = followers.length;
+			lastRetrievedCount = followers.length
 
-			geeks = geeks.concat(followers);
+			geeks = geeks.concat(followers)
 
-			callback();
-		});
+			callback()
+		})
 	},
 
 	function(err) {
-		console.log('loaded %s followers', geeks.length);
+		console.log('loaded %s followers', geeks.length)
 	}
-);
+)
